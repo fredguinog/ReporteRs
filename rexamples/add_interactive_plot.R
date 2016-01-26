@@ -1,16 +1,10 @@
-data(mtcars)
+dataset <- mtcars
+dataset$tooltip <- row.names(mtcars)
 
-plot( mtcars$mpg, mtcars$wt, type = "n", xlab = "mpg", ylab = "wt" )
+if( require(ggiraph) ){
+  gg_point_1 <- ggplot(dataset,
+         aes(x = disp, y = wt, color = mpg, tooltip = tooltip ) ) +
+    geom_point_interactive()
 
-dbl_click_actions = paste0("window.open('https://www.google.fr/#q=", 
-  row.names( mtcars ),"');")
-
-popup.labels = paste0( "<b>", row.names( mtcars ), "</b><br/>", 
-  "<i>double click to google the car</i>")
-
-add.plot.interactivity( fun = points, x = mtcars$mpg, y = mtcars$wt, 
-  col = mtcars$gear, pch = 16, 
-  dblclick.actions = dbl_click_actions, 
-  popup.labels = popup.labels 
-)
-
+  print( gg_point_1 )
+}
