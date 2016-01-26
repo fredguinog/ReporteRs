@@ -26,42 +26,42 @@ mkd = "
 
 ## Dependencies
 
-ReporteRs needs java (>= 1.6) ; make sure you have an installed JRE.
+ReporteRs needs `rJava` with a java version >= 1.6 ; make sure you have an installed JRE.
 
     system(\"java -version\")
     # should return \"java version '1.6.0'\" or greater.
 
-ReporteRs needs also some R packages ; run the following script to install them if needed.
+Test your `rJava` installation with the following code, you should get your java version in a string:
 
-    if( !require( rJava ) ) install.packages('rJava')
-    if( !require( ggplot2 ) ) install.packages('ggplot2')
-    if( !require( rvg ) ) install.packages('rvg')
+    require(rJava)
+    .jcall('java.lang.System','S','getProperty','java.version')
 
-## Get the latest version from Github
+## Get CRAN version
 
-**Build from Github**
+    install.packages('ReporteRs')
 
-There you will get the most updated package version. You will need
-a c++ compiler. (See [Rtools](http://cran.r-project.org/bin/windows/Rtools/) for example).
+## Build the latest version from Github
 
     require('devtools')
     install_github('ReporteRsjars', 'davidgohel')
     install_github('ReporteRs', 'davidgohel')
 
-**Download binaries from Github**
+## Get binaries from Github
 
 Binary versions are available on
-Github (for Windows and Mac OS).
+Github (for Windows and Mac OS)
+[here](http://github.com/davidgohel/ReporteRs/releases/).
 
-https://github.com/davidgohel/ReporteRs/releases/
+"
+doc = addMarkdown( doc, text = mkd,
+                   default.par.properties = default.par.properties )
 
-## Get CRAN version
 
-[![version](http://www.r-pkg.org/badges/version/rvg)](http://www.r-pkg.org/pkg/rvg)
 
-    install.packages('ReporteRs')
 
-# Introduction
+
+
+mkd <- "# Introduction
 
 You can use the package as a tool for fast reporting and as a tool for reporting automation.
 
@@ -93,7 +93,16 @@ Below a short R script:
     doc = addParagraph( doc, 'My tailor is rich.', stylename = 'Normal' )
 
     writeDoc( doc, 'my_first_doc.docx' )
+"
+doc = addMarkdown( doc, text = mkd,
+                   default.par.properties = default.par.properties )
 
+
+
+
+
+
+mkd <- "
 ## Reporting automation
 
 It lets you also create corporate documents, creation of complex tables,
@@ -109,6 +118,16 @@ can be used to define locations of slides to replace in the presentation.
 
 It is not possible to replace content in HTML document.
 
+"
+doc = addMarkdown( doc, text = mkd,
+                   default.par.properties = default.par.properties )
+
+
+
+
+
+
+mkd <- "
 # Main functions list
 
 **All theses functions are documented in the package.**
@@ -123,6 +142,16 @@ The following functions can be used whatever the output format is (docx, pptx, h
 * [addRScript](./addRScript.html): Add syntax highlighted R code
 * [addParagraph](./addParagraph.html): Add paragraphs of text
 * [writeDoc](./writeDoc.html): Write the document into a file
+"
+doc = addMarkdown( doc, text = mkd,
+                   default.par.properties = default.par.properties )
+
+
+
+
+
+
+mkd <- "
 
 The following functions can only be used when the output format is `docx`.
 
@@ -132,6 +161,16 @@ The following functions can only be used when the output format is `docx`.
 * **addSection** : Add a new section (landscape or portrait orientation and split content within columns)
 * **dim** : Get page dimensions
 
+"
+doc = addMarkdown( doc, text = mkd,
+                   default.par.properties = default.par.properties )
+
+
+
+
+
+
+mkd <- "
 The following functions can only be used when the output format is `pptx`.
 
 * **slide.layouts**: Get available layout names
@@ -142,11 +181,21 @@ The following functions can only be used when the output format is `pptx`.
 * [addSubtitle](./powerpoint.html): Add a sub title
 * **dim** : Get shape dimensions
 
+"
+doc = addMarkdown( doc, text = mkd,
+                   default.par.properties = default.par.properties )
+
+mkd <- "
 The following functions can only be used when the output format is `bsdoc`.
 
 * [addBootstrapMenu] (./bsdoc.html): add a menu to the web page (like the one being used in these web pages).
 * **addIframe**: add an iframe
 * [addFooter] (./bsdoc.html): add a footer to the web page (like the one being used in these web pages).
+"
+doc = addMarkdown( doc, text = mkd,
+                   default.par.properties = default.par.properties )
+
+mkd <- "
 
 Also `as.html` can be used to produce html code corresponding to `pot`, `plot` and `FlexTable` objects.
 
