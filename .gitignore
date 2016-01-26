@@ -1,2 +1,5 @@
-.project
-.settings/de.walware.r.core.prefs
+.Rproj.user
+.Rhistory
+.RData
+*.Rproj
+todo.md
