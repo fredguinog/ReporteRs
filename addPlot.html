@@ -347,17 +347,39 @@ doc = addPlot( doc = doc , fun = function(x) print(myggplot) )</code></pre>
 <p>Arguments <code>width</code> and <code>height</code> are specifying plot width and height in inches (default values are 6 and 6).</p>
 <p>When the document is a <code>pptx</code> object, width and height don’t necessary need to be specified. They are defined by the width and height of the shape that will contain the graphics. This dimensions can be omitted with <code>pptx</code> objects (it’s defined in the layout of the PowerPoint template).</p>
 </div>
-<div id="editable-graphics" class="section level2">
-<h2>Editable graphics</h2>
-<p>When producing vector graphics for docx or pptx objects, plots are editable. They can be modified, annotated, etc. in Word and in PowerPoint documents.</p>
-<p>Use <code>editable=FALSE</code> with addPlot to desable this feature.</p>
-<p><strong>Note also that Word version should be &gt; 2007 to be able to read these graphics.</strong></p>
-</div>
 <div id="vector-graphics" class="section level2">
 <h2>Vector graphics</h2>
 <p>Vector graphics are high quality graphics. Argument <code>vector.graphic</code> is a boolean value, if <strong>TRUE</strong> vector graphics will be produced, if <strong>FALSE</strong> raster graphics will be produced (<em>png</em>).</p>
-<p>If document is a pptx or a docx object, produced graphics will be editable (DrawingML format) ; colors, text can be modified later in the produced document. Edition can be turned off with argument <code>editable = TRUE</code>.</p>
-<p><em>Don’t use vector graphics if document is a docx and MS Word version used to open the document is 2007.</em></p>
+<p><strong>Note also that Word version should be &gt; 2007 to be able to read these graphics.</strong></p>
+<pre class="r"><code>doc = addPlot( doc = doc , fun = print, x = myggplot, vector.graphic = TRUE )
+doc = addPlot( doc = doc , fun = print, x = myggplot, vector.graphic = FALSE )</code></pre>
+</div>
+<div id="editable-graphics" class="section level2">
+<h2>Editable graphics</h2>
+<p>When producing vector graphics for docx or pptx objects, plots are editable. They can be modified, annotated, etc. in Word and in PowerPoint documents. Colors, text, lines, etc. can be modified later in the produced document.</p>
+<p>Use <code>editable=FALSE</code> with addPlot to desable this feature.</p>
+<pre class="r"><code>doc = addPlot( doc = doc , fun = print, x = myggplot, 
+               vector.graphic = TRUE, editable = FALSE )</code></pre>
+</div>
+<div id="interactive-graphics" class="section level2">
+<h2>Interactive graphics</h2>
+<p>Graphics made with <code>ggiraph</code> can be integrated in a <code>bsdoc</code> object. It will require to set argument <code>ggiraph</code> to TRUE and to add <code>d3.js</code> script in the bsdoc before adding ggiraph object.</p>
+<pre class="r"><code>require(ggiraph)
+
+gg_p &lt;- ggplot(iris, aes(x = Sepal.Length, y = Sepal.Width,
+    tooltip = Species)) +
+  geom_point_interactive(size = 3)
+
+download.file(&quot;https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.16/d3.min.js&quot;,
+  destfile = &quot;d3.min.js&quot;)
+
+doc &lt;- bsdoc()
+doc &lt;- addJavascript(doc = doc, file = &quot;d3.min.js&quot; )
+unlink(&quot;d3.min.js&quot;)
+
+doc &lt;- addPlot(doc, fun = function() print(gg_p), ggiraph = TRUE)
+writeDoc(doc, &quot;files/addplot/ggiraph/index.html&quot;)</code></pre>
+<p>It produces this <a href="./files/addplot/ggiraph/index.html">document</a>.</p>
 </div>
 
 <script>

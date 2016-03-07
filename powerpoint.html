@@ -522,9 +522,9 @@ writeDoc( mydoc, &#39;files/powerpoint/pp_replacement.pptx&#39; )</code></pre>
 <p>You will find below a script that shows usage of most usefull functions available for pptx objects.</p>
 <pre class="r"><code>library( ReporteRs )
 require( ggplot2 )
-require( magrittr )</code></pre>
-<pre><code>## Loading required package: magrittr</code></pre>
-<pre class="r"><code>mydoc &lt;- pptx( title = &quot;title&quot; )
+require( magrittr )
+
+mydoc &lt;- pptx( title = &quot;title&quot; )
 
 # Add a Title slide ------------------
 mydoc &lt;- mydoc %&gt;% 

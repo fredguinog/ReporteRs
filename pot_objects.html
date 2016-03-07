@@ -322,13 +322,13 @@ div.tocify {
 </p>
 <pre class="r"><code>pot(&#39;Hello&#39;) + &#39; &#39; + pot( &#39;World!&#39;, textItalic() )</code></pre>
 <p>
-<span>Hello</span><span> </span><span style="font-size:11pt;font-family:Times New Roman;font-style:italic;color:#000000;">World!</span>
+<span>Hello</span><span> </span><span style="font-size:11pt;font-family:Times New Roman;font-style:italic;color:rgba(0, 0, 0, 1);">World!</span>
 </p>
 <pre class="r"><code>pot( &#39;Cats&#39;,
   textProperties( color = &#39;#1A2530&#39; ) ) +
   &#39; and &#39; + pot(&#39;dogs&#39;, textBold( color = &#39;#E74C3C&#39; ) )</code></pre>
 <p>
-<span style="font-size:11pt;font-family:Times New Roman;color:#1A2530;">Cats</span><span> and </span><span style="font-size:11pt;font-family:Times New Roman;font-weight:bold;color:#E74C3C;">dogs</span>
+<span style="font-size:11pt;font-family:Times New Roman;color:rgba(26, 37, 48, 1);">Cats</span><span> and </span><span style="font-size:11pt;font-family:Times New Roman;font-weight:bold;color:rgba(231, 76, 60, 1);">dogs</span>
 </p>
 </div>
 <div id="usage" class="section level1">
@@ -348,7 +348,7 @@ my_text &lt;- pot( value = &#39;My tailor&#39;, format = my_text_prop ) +
   &#39; and &#39; +
   pot( value = &#39;dogs&#39;, format = chprop( my_text_prop, color = &#39;#D63C3A&#39;) )
 my_text_prop</code></pre>
-<pre><code>## {color: #1163A5 ;font-size: 20 ;font-weight: bold ;font-style: normal ;underlined: FALSE ;font-family: Courier New ;vertical.align: baseline ;}</code></pre>
+<pre><code>## {color:rgba(17,99,165,1.00);font-size:20;font-weight:bold;font-style:normal;underlined:FALSE;font-family:Courier New;vertical.align:baseline;}</code></pre>
 <div id="examples" class="section level2">
 <h2>Examples</h2>
 <p><strong>add paragraphs in a list (with bullets)</strong></p>
@@ -397,384 +397,384 @@ MyFTable</code></pre>
 <table style="margin-left:0px;margin-right:auto;">
 <thead>
 <tr>
-<td style="background-color:#FFFFFF;border-bottom-color:#000000;border-bottom-style:solid;border-bottom-width:1px;border-top-color:#000000;border-top-style:solid;border-top-width:1px;border-right-color:#000000;border-right-style:solid;border-right-width:1px;border-left-color:#000000;border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
+<td style="background-color:rgba(255, 255, 255, 0);border-bottom-color:rgba(0, 0, 0, 1);border-bottom-style:solid;border-bottom-width:1px;border-top-color:rgba(0, 0, 0, 1);border-top-style:solid;border-top-width:1px;border-right-color:rgba(0, 0, 0, 1);border-right-style:solid;border-right-width:1px;border-left-color:rgba(0, 0, 0, 1);border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
 <p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
 </p>
 </td>
-<td style="background-color:#FFFFFF;border-bottom-color:#000000;border-bottom-style:solid;border-bottom-width:1px;border-top-color:#000000;border-top-style:solid;border-top-width:1px;border-right-color:#000000;border-right-style:solid;border-right-width:1px;border-left-color:#000000;border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
+<td style="background-color:rgba(255, 255, 255, 0);border-bottom-color:rgba(0, 0, 0, 1);border-bottom-style:solid;border-bottom-width:1px;border-top-color:rgba(0, 0, 0, 1);border-top-style:solid;border-top-width:1px;border-right-color:rgba(0, 0, 0, 1);border-right-style:solid;border-right-width:1px;border-left-color:rgba(0, 0, 0, 1);border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
 <p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
-<span style="font-size:12pt;font-family:Arial;font-weight:bold;color:#000000;">mpg</span>
+<span style="font-size:12pt;font-family:Arial;font-weight:bold;color:rgba(0, 0, 0, 1);">mpg</span>
 </p>
 </td>
-<td style="background-color:#FFFFFF;border-bottom-color:#000000;border-bottom-style:solid;border-bottom-width:1px;border-top-color:#000000;border-top-style:solid;border-top-width:1px;border-right-color:#000000;border-right-style:solid;border-right-width:1px;border-left-color:#000000;border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
+<td style="background-color:rgba(255, 255, 255, 0);border-bottom-color:rgba(0, 0, 0, 1);border-bottom-style:solid;border-bottom-width:1px;border-top-color:rgba(0, 0, 0, 1);border-top-style:solid;border-top-width:1px;border-right-color:rgba(0, 0, 0, 1);border-right-style:solid;border-right-width:1px;border-left-color:rgba(0, 0, 0, 1);border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
 <p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
-<span style="font-size:12pt;font-family:Arial;font-weight:bold;color:#000000;">cyl</span>
+<span style="font-size:12pt;font-family:Arial;font-weight:bold;color:rgba(0, 0, 0, 1);">cyl</span>
 </p>
 </td>
-<td style="background-color:#FFFFFF;border-bottom-color:#000000;border-bottom-style:solid;border-bottom-width:1px;border-top-color:#000000;border-top-style:solid;border-top-width:1px;border-right-color:#000000;border-right-style:solid;border-right-width:1px;border-left-color:#000000;border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
+<td style="background-color:rgba(255, 255, 255, 0);border-bottom-color:rgba(0, 0, 0, 1);border-bottom-style:solid;border-bottom-width:1px;border-top-color:rgba(0, 0, 0, 1);border-top-style:solid;border-top-width:1px;border-right-color:rgba(0, 0, 0, 1);border-right-style:solid;border-right-width:1px;border-left-color:rgba(0, 0, 0, 1);border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
 <p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
-<span style="font-size:12pt;font-family:Arial;font-weight:bold;color:#000000;">disp</span>
+<span style="font-size:12pt;font-family:Arial;font-weight:bold;color:rgba(0, 0, 0, 1);">disp</span>
 </p>
 </td>
-<td style="background-color:#FFFFFF;border-bottom-color:#000000;border-bottom-style:solid;border-bottom-width:1px;border-top-color:#000000;border-top-style:solid;border-top-width:1px;border-right-color:#000000;border-right-style:solid;border-right-width:1px;border-left-color:#000000;border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
+<td style="background-color:rgba(255, 255, 255, 0);border-bottom-color:rgba(0, 0, 0, 1);border-bottom-style:solid;border-bottom-width:1px;border-top-color:rgba(0, 0, 0, 1);border-top-style:solid;border-top-width:1px;border-right-color:rgba(0, 0, 0, 1);border-right-style:solid;border-right-width:1px;border-left-color:rgba(0, 0, 0, 1);border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
 <p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
-<span style="font-size:12pt;font-family:Arial;font-weight:bold;color:#000000;">hp</span>
+<span style="font-size:12pt;font-family:Arial;font-weight:bold;color:rgba(0, 0, 0, 1);">hp</span>
 </p>
 </td>
-<td style="background-color:#FFFFFF;border-bottom-color:#000000;border-bottom-style:solid;border-bottom-width:1px;border-top-color:#000000;border-top-style:solid;border-top-width:1px;border-right-color:#000000;border-right-style:solid;border-right-width:1px;border-left-color:#000000;border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
+<td style="background-color:rgba(255, 255, 255, 0);border-bottom-color:rgba(0, 0, 0, 1);border-bottom-style:solid;border-bottom-width:1px;border-top-color:rgba(0, 0, 0, 1);border-top-style:solid;border-top-width:1px;border-right-color:rgba(0, 0, 0, 1);border-right-style:solid;border-right-width:1px;border-left-color:rgba(0, 0, 0, 1);border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
 <p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
-<span style="font-size:12pt;font-family:Arial;font-weight:bold;color:#000000;">drat</span>
+<span style="font-size:12pt;font-family:Arial;font-weight:bold;color:rgba(0, 0, 0, 1);">drat</span>
 </p>
 </td>
-<td style="background-color:#FFFFFF;border-bottom-color:#000000;border-bottom-style:solid;border-bottom-width:1px;border-top-color:#000000;border-top-style:solid;border-top-width:1px;border-right-color:#000000;border-right-style:solid;border-right-width:1px;border-left-color:#000000;border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
+<td style="background-color:rgba(255, 255, 255, 0);border-bottom-color:rgba(0, 0, 0, 1);border-bottom-style:solid;border-bottom-width:1px;border-top-color:rgba(0, 0, 0, 1);border-top-style:solid;border-top-width:1px;border-right-color:rgba(0, 0, 0, 1);border-right-style:solid;border-right-width:1px;border-left-color:rgba(0, 0, 0, 1);border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
 <p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
-<span style="font-size:12pt;font-family:Arial;font-weight:bold;color:#000000;">wt</span>
+<span style="font-size:12pt;font-family:Arial;font-weight:bold;color:rgba(0, 0, 0, 1);">wt</span>
 </p>
 </td>
-<td style="background-color:#FFFFFF;border-bottom-color:#000000;border-bottom-style:solid;border-bottom-width:1px;border-top-color:#000000;border-top-style:solid;border-top-width:1px;border-right-color:#000000;border-right-style:solid;border-right-width:1px;border-left-color:#000000;border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
+<td style="background-color:rgba(255, 255, 255, 0);border-bottom-color:rgba(0, 0, 0, 1);border-bottom-style:solid;border-bottom-width:1px;border-top-color:rgba(0, 0, 0, 1);border-top-style:solid;border-top-width:1px;border-right-color:rgba(0, 0, 0, 1);border-right-style:solid;border-right-width:1px;border-left-color:rgba(0, 0, 0, 1);border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
 <p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
-<span style="font-size:12pt;font-family:Arial;font-weight:bold;color:#000000;">qsec</span>
+<span style="font-size:12pt;font-family:Arial;font-weight:bold;color:rgba(0, 0, 0, 1);">qsec</span>
 </p>
 </td>
-<td style="background-color:#FFFFFF;border-bottom-color:#000000;border-bottom-style:solid;border-bottom-width:1px;border-top-color:#000000;border-top-style:solid;border-top-width:1px;border-right-color:#000000;border-right-style:solid;border-right-width:1px;border-left-color:#000000;border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
+<td style="background-color:rgba(255, 255, 255, 0);border-bottom-color:rgba(0, 0, 0, 1);border-bottom-style:solid;border-bottom-width:1px;border-top-color:rgba(0, 0, 0, 1);border-top-style:solid;border-top-width:1px;border-right-color:rgba(0, 0, 0, 1);border-right-style:solid;border-right-width:1px;border-left-color:rgba(0, 0, 0, 1);border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
 <p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
-<span style="font-size:12pt;font-family:Arial;font-weight:bold;color:#000000;">vs</span>
+<span style="font-size:12pt;font-family:Arial;font-weight:bold;color:rgba(0, 0, 0, 1);">vs</span>
 </p>
 </td>
-<td style="background-color:#FFFFFF;border-bottom-color:#000000;border-bottom-style:solid;border-bottom-width:1px;border-top-color:#000000;border-top-style:solid;border-top-width:1px;border-right-color:#000000;border-right-style:solid;border-right-width:1px;border-left-color:#000000;border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
+<td style="background-color:rgba(255, 255, 255, 0);border-bottom-color:rgba(0, 0, 0, 1);border-bottom-style:solid;border-bottom-width:1px;border-top-color:rgba(0, 0, 0, 1);border-top-style:solid;border-top-width:1px;border-right-color:rgba(0, 0, 0, 1);border-right-style:solid;border-right-width:1px;border-left-color:rgba(0, 0, 0, 1);border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
 <p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
-<span style="font-size:12pt;font-family:Arial;font-weight:bold;color:#000000;">am</span>
+<span style="font-size:12pt;font-family:Arial;font-weight:bold;color:rgba(0, 0, 0, 1);">am</span>
 </p>
 </td>
-<td style="background-color:#FFFFFF;border-bottom-color:#000000;border-bottom-style:solid;border-bottom-width:1px;border-top-color:#000000;border-top-style:solid;border-top-width:1px;border-right-color:#000000;border-right-style:solid;border-right-width:1px;border-left-color:#000000;border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
+<td style="background-color:rgba(255, 255, 255, 0);border-bottom-color:rgba(0, 0, 0, 1);border-bottom-style:solid;border-bottom-width:1px;border-top-color:rgba(0, 0, 0, 1);border-top-style:solid;border-top-width:1px;border-right-color:rgba(0, 0, 0, 1);border-right-style:solid;border-right-width:1px;border-left-color:rgba(0, 0, 0, 1);border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
 <p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
-<span style="font-size:12pt;font-family:Arial;font-weight:bold;color:#000000;">gear</span>
+<span style="font-size:12pt;font-family:Arial;font-weight:bold;color:rgba(0, 0, 0, 1);">gear</span>
 </p>
 </td>
-<td style="background-color:#FFFFFF;border-bottom-color:#000000;border-bottom-style:solid;border-bottom-width:1px;border-top-color:#000000;border-top-style:solid;border-top-width:1px;border-right-color:#000000;border-right-style:solid;border-right-width:1px;border-left-color:#000000;border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
+<td style="background-color:rgba(255, 255, 255, 0);border-bottom-color:rgba(0, 0, 0, 1);border-bottom-style:solid;border-bottom-width:1px;border-top-color:rgba(0, 0, 0, 1);border-top-style:solid;border-top-width:1px;border-right-color:rgba(0, 0, 0, 1);border-right-style:solid;border-right-width:1px;border-left-color:rgba(0, 0, 0, 1);border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
 <p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
-<span style="font-size:12pt;font-family:Arial;font-weight:bold;color:#000000;">carb</span>
+<span style="font-size:12pt;font-family:Arial;font-weight:bold;color:rgba(0, 0, 0, 1);">carb</span>
 </p>
 </td>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="background-color:#FFFFFF;border-bottom-color:#000000;border-bottom-style:solid;border-bottom-width:1px;border-top-color:#000000;border-top-style:solid;border-top-width:1px;border-right-color:#000000;border-right-style:solid;border-right-width:1px;border-left-color:#000000;border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
+<td style="background-color:rgba(255, 255, 255, 0);border-bottom-color:rgba(0, 0, 0, 1);border-bottom-style:solid;border-bottom-width:1px;border-top-color:rgba(0, 0, 0, 1);border-top-style:solid;border-top-width:1px;border-right-color:rgba(0, 0, 0, 1);border-right-style:solid;border-right-width:1px;border-left-color:rgba(0, 0, 0, 1);border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
 <p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
-<span style="font-size:12pt;font-family:Arial;color:#000000;">Mazda RX4</span><span style="font-size:12pt;font-family:Arial;color:#FF0000;vertical-align:super;">*</span>
+<span style="font-size:12pt;font-family:Arial;color:rgba(0, 0, 0, 1);">Mazda RX4</span><span style="font-size:12pt;font-family:Arial;color:rgba(255, 0, 0, 1);vertical-align:super;">*</span>
 </p>
 </td>
-<td style="background-color:#FFFFFF;border-bottom-color:#000000;border-bottom-style:solid;border-bottom-width:1px;border-top-color:#000000;border-top-style:solid;border-top-width:1px;border-right-color:#000000;border-right-style:solid;border-right-width:1px;border-left-color:#000000;border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
+<td style="background-color:rgba(255, 255, 255, 0);border-bottom-color:rgba(0, 0, 0, 1);border-bottom-style:solid;border-bottom-width:1px;border-top-color:rgba(0, 0, 0, 1);border-top-style:solid;border-top-width:1px;border-right-color:rgba(0, 0, 0, 1);border-right-style:solid;border-right-width:1px;border-left-color:rgba(0, 0, 0, 1);border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
 <p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
-<span style="font-size:12pt;font-family:Arial;color:#000000;">21.0</span>
+<span style="font-size:12pt;font-family:Arial;color:rgba(0, 0, 0, 1);">21.0</span>
 </p>
 </td>
-<td style="background-color:#FFFFFF;border-bottom-color:#000000;border-bottom-style:solid;border-bottom-width:1px;border-top-color:#000000;border-top-style:solid;border-top-width:1px;border-right-color:#000000;border-right-style:solid;border-right-width:1px;border-left-color:#000000;border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
+<td style="background-color:rgba(255, 255, 255, 0);border-bottom-color:rgba(0, 0, 0, 1);border-bottom-style:solid;border-bottom-width:1px;border-top-color:rgba(0, 0, 0, 1);border-top-style:solid;border-top-width:1px;border-right-color:rgba(0, 0, 0, 1);border-right-style:solid;border-right-width:1px;border-left-color:rgba(0, 0, 0, 1);border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
 <p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
-<span style="font-size:12pt;font-family:Arial;color:#000000;">6</span>
+<span style="font-size:12pt;font-family:Arial;color:rgba(0, 0, 0, 1);">6</span>
 </p>
 </td>
-<td style="background-color:#FFFFFF;border-bottom-color:#000000;border-bottom-style:solid;border-bottom-width:1px;border-top-color:#000000;border-top-style:solid;border-top-width:1px;border-right-color:#000000;border-right-style:solid;border-right-width:1px;border-left-color:#000000;border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
+<td style="background-color:rgba(255, 255, 255, 0);border-bottom-color:rgba(0, 0, 0, 1);border-bottom-style:solid;border-bottom-width:1px;border-top-color:rgba(0, 0, 0, 1);border-top-style:solid;border-top-width:1px;border-right-color:rgba(0, 0, 0, 1);border-right-style:solid;border-right-width:1px;border-left-color:rgba(0, 0, 0, 1);border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
 <p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
-<span style="font-size:12pt;font-family:Arial;color:#000000;">160</span>
+<span style="font-size:12pt;font-family:Arial;color:rgba(0, 0, 0, 1);">160</span>
 </p>
 </td>
-<td style="background-color:#FFFFFF;border-bottom-color:#000000;border-bottom-style:solid;border-bottom-width:1px;border-top-color:#000000;border-top-style:solid;border-top-width:1px;border-right-color:#000000;border-right-style:solid;border-right-width:1px;border-left-color:#000000;border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
+<td style="background-color:rgba(255, 255, 255, 0);border-bottom-color:rgba(0, 0, 0, 1);border-bottom-style:solid;border-bottom-width:1px;border-top-color:rgba(0, 0, 0, 1);border-top-style:solid;border-top-width:1px;border-right-color:rgba(0, 0, 0, 1);border-right-style:solid;border-right-width:1px;border-left-color:rgba(0, 0, 0, 1);border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
 <p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
-<span style="font-size:12pt;font-family:Arial;color:#000000;">110</span>
+<span style="font-size:12pt;font-family:Arial;color:rgba(0, 0, 0, 1);">110</span>
 </p>
 </td>
-<td style="background-color:#FFFFFF;border-bottom-color:#000000;border-bottom-style:solid;border-bottom-width:1px;border-top-color:#000000;border-top-style:solid;border-top-width:1px;border-right-color:#000000;border-right-style:solid;border-right-width:1px;border-left-color:#000000;border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
+<td style="background-color:rgba(255, 255, 255, 0);border-bottom-color:rgba(0, 0, 0, 1);border-bottom-style:solid;border-bottom-width:1px;border-top-color:rgba(0, 0, 0, 1);border-top-style:solid;border-top-width:1px;border-right-color:rgba(0, 0, 0, 1);border-right-style:solid;border-right-width:1px;border-left-color:rgba(0, 0, 0, 1);border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
 <p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
-<span style="font-size:12pt;font-family:Arial;color:#000000;">3.90</span>
+<span style="font-size:12pt;font-family:Arial;color:rgba(0, 0, 0, 1);">3.90</span>
 </p>
 </td>
-<td style="background-color:#FFFFFF;border-bottom-color:#000000;border-bottom-style:solid;border-bottom-width:1px;border-top-color:#000000;border-top-style:solid;border-top-width:1px;border-right-color:#000000;border-right-style:solid;border-right-width:1px;border-left-color:#000000;border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
+<td style="background-color:rgba(255, 255, 255, 0);border-bottom-color:rgba(0, 0, 0, 1);border-bottom-style:solid;border-bottom-width:1px;border-top-color:rgba(0, 0, 0, 1);border-top-style:solid;border-top-width:1px;border-right-color:rgba(0, 0, 0, 1);border-right-style:solid;border-right-width:1px;border-left-color:rgba(0, 0, 0, 1);border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
 <p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
-<span style="font-size:12pt;font-family:Arial;color:#000000;">2.620</span>
+<span style="font-size:12pt;font-family:Arial;color:rgba(0, 0, 0, 1);">2.620</span>
 </p>
 </td>
-<td style="background-color:#FFFFFF;border-bottom-color:#000000;border-bottom-style:solid;border-bottom-width:1px;border-top-color:#000000;border-top-style:solid;border-top-width:1px;border-right-color:#000000;border-right-style:solid;border-right-width:1px;border-left-color:#000000;border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
+<td style="background-color:rgba(255, 255, 255, 0);border-bottom-color:rgba(0, 0, 0, 1);border-bottom-style:solid;border-bottom-width:1px;border-top-color:rgba(0, 0, 0, 1);border-top-style:solid;border-top-width:1px;border-right-color:rgba(0, 0, 0, 1);border-right-style:solid;border-right-width:1px;border-left-color:rgba(0, 0, 0, 1);border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
 <p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
-<span style="font-size:12pt;font-family:Arial;color:#000000;">16.46</span>
+<span style="font-size:12pt;font-family:Arial;color:rgba(0, 0, 0, 1);">16.46</span>
 </p>
 </td>
-<td style="background-color:#FFFFFF;border-bottom-color:#000000;border-bottom-style:solid;border-bottom-width:1px;border-top-color:#000000;border-top-style:solid;border-top-width:1px;border-right-color:#000000;border-right-style:solid;border-right-width:1px;border-left-color:#000000;border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
+<td style="background-color:rgba(255, 255, 255, 0);border-bottom-color:rgba(0, 0, 0, 1);border-bottom-style:solid;border-bottom-width:1px;border-top-color:rgba(0, 0, 0, 1);border-top-style:solid;border-top-width:1px;border-right-color:rgba(0, 0, 0, 1);border-right-style:solid;border-right-width:1px;border-left-color:rgba(0, 0, 0, 1);border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
 <p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
-<span style="font-size:12pt;font-family:Arial;color:#000000;">0</span>
+<span style="font-size:12pt;font-family:Arial;color:rgba(0, 0, 0, 1);">0</span>
 </p>
 </td>
-<td style="background-color:#FFFFFF;border-bottom-color:#000000;border-bottom-style:solid;border-bottom-width:1px;border-top-color:#000000;border-top-style:solid;border-top-width:1px;border-right-color:#000000;border-right-style:solid;border-right-width:1px;border-left-color:#000000;border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
+<td style="background-color:rgba(255, 255, 255, 0);border-bottom-color:rgba(0, 0, 0, 1);border-bottom-style:solid;border-bottom-width:1px;border-top-color:rgba(0, 0, 0, 1);border-top-style:solid;border-top-width:1px;border-right-color:rgba(0, 0, 0, 1);border-right-style:solid;border-right-width:1px;border-left-color:rgba(0, 0, 0, 1);border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
 <p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
-<span style="font-size:12pt;font-family:Arial;color:#000000;">1</span>
+<span style="font-size:12pt;font-family:Arial;color:rgba(0, 0, 0, 1);">1</span>
 </p>
 </td>
-<td style="background-color:#FFFFFF;border-bottom-color:#000000;border-bottom-style:solid;border-bottom-width:1px;border-top-color:#000000;border-top-style:solid;border-top-width:1px;border-right-color:#000000;border-right-style:solid;border-right-width:1px;border-left-color:#000000;border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
+<td style="background-color:rgba(255, 255, 255, 0);border-bottom-color:rgba(0, 0, 0, 1);border-bottom-style:solid;border-bottom-width:1px;border-top-color:rgba(0, 0, 0, 1);border-top-style:solid;border-top-width:1px;border-right-color:rgba(0, 0, 0, 1);border-right-style:solid;border-right-width:1px;border-left-color:rgba(0, 0, 0, 1);border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
 <p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
-<span style="font-size:12pt;font-family:Arial;color:#000000;">4</span>
+<span style="font-size:12pt;font-family:Arial;color:rgba(0, 0, 0, 1);">4</span>
 </p>
 </td>
-<td style="background-color:#FFFFFF;border-bottom-color:#000000;border-bottom-style:solid;border-bottom-width:1px;border-top-color:#000000;border-top-style:solid;border-top-width:1px;border-right-color:#000000;border-right-style:solid;border-right-width:1px;border-left-color:#000000;border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
+<td style="background-color:rgba(255, 255, 255, 0);border-bottom-color:rgba(0, 0, 0, 1);border-bottom-style:solid;border-bottom-width:1px;border-top-color:rgba(0, 0, 0, 1);border-top-style:solid;border-top-width:1px;border-right-color:rgba(0, 0, 0, 1);border-right-style:solid;border-right-width:1px;border-left-color:rgba(0, 0, 0, 1);border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
 <p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
-<span style="font-size:12pt;font-family:Arial;color:#000000;">4</span>
-</p>
-</td>
-</tr>
-<tr>
-<td style="background-color:#FFFFFF;border-bottom-color:#000000;border-bottom-style:solid;border-bottom-width:1px;border-top-color:#000000;border-top-style:solid;border-top-width:1px;border-right-color:#000000;border-right-style:solid;border-right-width:1px;border-left-color:#000000;border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
-<p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
-<span style="font-size:12pt;font-family:Arial;color:#000000;">Mazda RX4 Wag</span>
-</p>
-</td>
-<td style="background-color:#FFFFFF;border-bottom-color:#000000;border-bottom-style:solid;border-bottom-width:1px;border-top-color:#000000;border-top-style:solid;border-top-width:1px;border-right-color:#000000;border-right-style:solid;border-right-width:1px;border-left-color:#000000;border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
-<p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
-<span style="font-size:12pt;font-family:Arial;color:#000000;">21.0</span>
-</p>
-</td>
-<td style="background-color:#FFFFFF;border-bottom-color:#000000;border-bottom-style:solid;border-bottom-width:1px;border-top-color:#000000;border-top-style:solid;border-top-width:1px;border-right-color:#000000;border-right-style:solid;border-right-width:1px;border-left-color:#000000;border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
-<p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
-<span style="font-size:12pt;font-family:Arial;color:#000000;">6</span>
-</p>
-</td>
-<td style="background-color:#FFFFFF;border-bottom-color:#000000;border-bottom-style:solid;border-bottom-width:1px;border-top-color:#000000;border-top-style:solid;border-top-width:1px;border-right-color:#000000;border-right-style:solid;border-right-width:1px;border-left-color:#000000;border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
-<p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
-<span style="font-size:12pt;font-family:Arial;color:#000000;">160</span>
-</p>
-</td>
-<td style="background-color:#FFFFFF;border-bottom-color:#000000;border-bottom-style:solid;border-bottom-width:1px;border-top-color:#000000;border-top-style:solid;border-top-width:1px;border-right-color:#000000;border-right-style:solid;border-right-width:1px;border-left-color:#000000;border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
-<p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
-<span style="font-size:12pt;font-family:Arial;color:#000000;">110</span>
-</p>
-</td>
-<td style="background-color:#FFFFFF;border-bottom-color:#000000;border-bottom-style:solid;border-bottom-width:1px;border-top-color:#000000;border-top-style:solid;border-top-width:1px;border-right-color:#000000;border-right-style:solid;border-right-width:1px;border-left-color:#000000;border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
-<p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
-<span style="font-size:12pt;font-family:Arial;color:#000000;">3.90</span>
-</p>
-</td>
-<td style="background-color:#FFFFFF;border-bottom-color:#000000;border-bottom-style:solid;border-bottom-width:1px;border-top-color:#000000;border-top-style:solid;border-top-width:1px;border-right-color:#000000;border-right-style:solid;border-right-width:1px;border-left-color:#000000;border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
-<p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
-<span style="font-size:12pt;font-family:Arial;color:#000000;">2.875</span>
-</p>
-</td>
-<td style="background-color:#FFFFFF;border-bottom-color:#000000;border-bottom-style:solid;border-bottom-width:1px;border-top-color:#000000;border-top-style:solid;border-top-width:1px;border-right-color:#000000;border-right-style:solid;border-right-width:1px;border-left-color:#000000;border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
-<p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
-<span style="font-size:12pt;font-family:Arial;color:#000000;">17.02</span>
-</p>
-</td>
-<td style="background-color:#FFFFFF;border-bottom-color:#000000;border-bottom-style:solid;border-bottom-width:1px;border-top-color:#000000;border-top-style:solid;border-top-width:1px;border-right-color:#000000;border-right-style:solid;border-right-width:1px;border-left-color:#000000;border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
-<p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
-<span style="font-size:12pt;font-family:Arial;color:#000000;">0</span>
-</p>
-</td>
-<td style="background-color:#FFFFFF;border-bottom-color:#000000;border-bottom-style:solid;border-bottom-width:1px;border-top-color:#000000;border-top-style:solid;border-top-width:1px;border-right-color:#000000;border-right-style:solid;border-right-width:1px;border-left-color:#000000;border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
-<p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
-<span style="font-size:12pt;font-family:Arial;color:#000000;">1</span>
-</p>
-</td>
-<td style="background-color:#FFFFFF;border-bottom-color:#000000;border-bottom-style:solid;border-bottom-width:1px;border-top-color:#000000;border-top-style:solid;border-top-width:1px;border-right-color:#000000;border-right-style:solid;border-right-width:1px;border-left-color:#000000;border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
-<p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
-<span style="font-size:12pt;font-family:Arial;color:#000000;">4</span>
-</p>
-</td>
-<td style="background-color:#FFFFFF;border-bottom-color:#000000;border-bottom-style:solid;border-bottom-width:1px;border-top-color:#000000;border-top-style:solid;border-top-width:1px;border-right-color:#000000;border-right-style:solid;border-right-width:1px;border-left-color:#000000;border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
-<p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
-<span style="font-size:12pt;font-family:Arial;color:#000000;">4</span>
+<span style="font-size:12pt;font-family:Arial;color:rgba(0, 0, 0, 1);">4</span>
 </p>
 </td>
 </tr>
 <tr>
-<td style="background-color:#FFFFFF;border-bottom-color:#000000;border-bottom-style:solid;border-bottom-width:1px;border-top-color:#000000;border-top-style:solid;border-top-width:1px;border-right-color:#000000;border-right-style:solid;border-right-width:1px;border-left-color:#000000;border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
+<td style="background-color:rgba(255, 255, 255, 0);border-bottom-color:rgba(0, 0, 0, 1);border-bottom-style:solid;border-bottom-width:1px;border-top-color:rgba(0, 0, 0, 1);border-top-style:solid;border-top-width:1px;border-right-color:rgba(0, 0, 0, 1);border-right-style:solid;border-right-width:1px;border-left-color:rgba(0, 0, 0, 1);border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
 <p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
-<span style="font-size:12pt;font-family:Arial;color:#000000;">Datsun 710</span>
+<span style="font-size:12pt;font-family:Arial;color:rgba(0, 0, 0, 1);">Mazda RX4 Wag</span>
 </p>
 </td>
-<td style="background-color:#FFFFFF;border-bottom-color:#000000;border-bottom-style:solid;border-bottom-width:1px;border-top-color:#000000;border-top-style:solid;border-top-width:1px;border-right-color:#000000;border-right-style:solid;border-right-width:1px;border-left-color:#000000;border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
+<td style="background-color:rgba(255, 255, 255, 0);border-bottom-color:rgba(0, 0, 0, 1);border-bottom-style:solid;border-bottom-width:1px;border-top-color:rgba(0, 0, 0, 1);border-top-style:solid;border-top-width:1px;border-right-color:rgba(0, 0, 0, 1);border-right-style:solid;border-right-width:1px;border-left-color:rgba(0, 0, 0, 1);border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
 <p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
-<span style="font-size:12pt;font-family:Arial;color:#000000;">22.8</span>
+<span style="font-size:12pt;font-family:Arial;color:rgba(0, 0, 0, 1);">21.0</span>
 </p>
 </td>
-<td style="background-color:#FFFFFF;border-bottom-color:#000000;border-bottom-style:solid;border-bottom-width:1px;border-top-color:#000000;border-top-style:solid;border-top-width:1px;border-right-color:#000000;border-right-style:solid;border-right-width:1px;border-left-color:#000000;border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
+<td style="background-color:rgba(255, 255, 255, 0);border-bottom-color:rgba(0, 0, 0, 1);border-bottom-style:solid;border-bottom-width:1px;border-top-color:rgba(0, 0, 0, 1);border-top-style:solid;border-top-width:1px;border-right-color:rgba(0, 0, 0, 1);border-right-style:solid;border-right-width:1px;border-left-color:rgba(0, 0, 0, 1);border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
 <p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
-<span style="font-size:12pt;font-family:Arial;color:#000000;">4</span>
+<span style="font-size:12pt;font-family:Arial;color:rgba(0, 0, 0, 1);">6</span>
 </p>
 </td>
-<td style="background-color:#FFFFFF;border-bottom-color:#000000;border-bottom-style:solid;border-bottom-width:1px;border-top-color:#000000;border-top-style:solid;border-top-width:1px;border-right-color:#000000;border-right-style:solid;border-right-width:1px;border-left-color:#000000;border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
+<td style="background-color:rgba(255, 255, 255, 0);border-bottom-color:rgba(0, 0, 0, 1);border-bottom-style:solid;border-bottom-width:1px;border-top-color:rgba(0, 0, 0, 1);border-top-style:solid;border-top-width:1px;border-right-color:rgba(0, 0, 0, 1);border-right-style:solid;border-right-width:1px;border-left-color:rgba(0, 0, 0, 1);border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
 <p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
-<span style="font-size:12pt;font-family:Arial;color:#000000;">108</span>
+<span style="font-size:12pt;font-family:Arial;color:rgba(0, 0, 0, 1);">160</span>
 </p>
 </td>
-<td style="background-color:#FFFFFF;border-bottom-color:#000000;border-bottom-style:solid;border-bottom-width:1px;border-top-color:#000000;border-top-style:solid;border-top-width:1px;border-right-color:#000000;border-right-style:solid;border-right-width:1px;border-left-color:#000000;border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
+<td style="background-color:rgba(255, 255, 255, 0);border-bottom-color:rgba(0, 0, 0, 1);border-bottom-style:solid;border-bottom-width:1px;border-top-color:rgba(0, 0, 0, 1);border-top-style:solid;border-top-width:1px;border-right-color:rgba(0, 0, 0, 1);border-right-style:solid;border-right-width:1px;border-left-color:rgba(0, 0, 0, 1);border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
 <p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
-<span style="font-size:12pt;font-family:Arial;color:#000000;"> 93</span>
+<span style="font-size:12pt;font-family:Arial;color:rgba(0, 0, 0, 1);">110</span>
 </p>
 </td>
-<td style="background-color:#FFFFFF;border-bottom-color:#000000;border-bottom-style:solid;border-bottom-width:1px;border-top-color:#000000;border-top-style:solid;border-top-width:1px;border-right-color:#000000;border-right-style:solid;border-right-width:1px;border-left-color:#000000;border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
+<td style="background-color:rgba(255, 255, 255, 0);border-bottom-color:rgba(0, 0, 0, 1);border-bottom-style:solid;border-bottom-width:1px;border-top-color:rgba(0, 0, 0, 1);border-top-style:solid;border-top-width:1px;border-right-color:rgba(0, 0, 0, 1);border-right-style:solid;border-right-width:1px;border-left-color:rgba(0, 0, 0, 1);border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
 <p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
-<span style="font-size:12pt;font-family:Arial;color:#000000;">3.85</span>
+<span style="font-size:12pt;font-family:Arial;color:rgba(0, 0, 0, 1);">3.90</span>
 </p>
 </td>
-<td style="background-color:#FFFFFF;border-bottom-color:#000000;border-bottom-style:solid;border-bottom-width:1px;border-top-color:#000000;border-top-style:solid;border-top-width:1px;border-right-color:#000000;border-right-style:solid;border-right-width:1px;border-left-color:#000000;border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
+<td style="background-color:rgba(255, 255, 255, 0);border-bottom-color:rgba(0, 0, 0, 1);border-bottom-style:solid;border-bottom-width:1px;border-top-color:rgba(0, 0, 0, 1);border-top-style:solid;border-top-width:1px;border-right-color:rgba(0, 0, 0, 1);border-right-style:solid;border-right-width:1px;border-left-color:rgba(0, 0, 0, 1);border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
 <p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
-<span style="font-size:12pt;font-family:Arial;color:#000000;">2.320</span>
+<span style="font-size:12pt;font-family:Arial;color:rgba(0, 0, 0, 1);">2.875</span>
 </p>
 </td>
-<td style="background-color:#FFFFFF;border-bottom-color:#000000;border-bottom-style:solid;border-bottom-width:1px;border-top-color:#000000;border-top-style:solid;border-top-width:1px;border-right-color:#000000;border-right-style:solid;border-right-width:1px;border-left-color:#000000;border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
+<td style="background-color:rgba(255, 255, 255, 0);border-bottom-color:rgba(0, 0, 0, 1);border-bottom-style:solid;border-bottom-width:1px;border-top-color:rgba(0, 0, 0, 1);border-top-style:solid;border-top-width:1px;border-right-color:rgba(0, 0, 0, 1);border-right-style:solid;border-right-width:1px;border-left-color:rgba(0, 0, 0, 1);border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
 <p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
-<span style="font-size:12pt;font-family:Arial;color:#000000;">18.61</span>
+<span style="font-size:12pt;font-family:Arial;color:rgba(0, 0, 0, 1);">17.02</span>
 </p>
 </td>
-<td style="background-color:#FFFFFF;border-bottom-color:#000000;border-bottom-style:solid;border-bottom-width:1px;border-top-color:#000000;border-top-style:solid;border-top-width:1px;border-right-color:#000000;border-right-style:solid;border-right-width:1px;border-left-color:#000000;border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
+<td style="background-color:rgba(255, 255, 255, 0);border-bottom-color:rgba(0, 0, 0, 1);border-bottom-style:solid;border-bottom-width:1px;border-top-color:rgba(0, 0, 0, 1);border-top-style:solid;border-top-width:1px;border-right-color:rgba(0, 0, 0, 1);border-right-style:solid;border-right-width:1px;border-left-color:rgba(0, 0, 0, 1);border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
 <p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
-<span style="font-size:12pt;font-family:Arial;color:#000000;">1</span>
+<span style="font-size:12pt;font-family:Arial;color:rgba(0, 0, 0, 1);">0</span>
 </p>
 </td>
-<td style="background-color:#FFFFFF;border-bottom-color:#000000;border-bottom-style:solid;border-bottom-width:1px;border-top-color:#000000;border-top-style:solid;border-top-width:1px;border-right-color:#000000;border-right-style:solid;border-right-width:1px;border-left-color:#000000;border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
+<td style="background-color:rgba(255, 255, 255, 0);border-bottom-color:rgba(0, 0, 0, 1);border-bottom-style:solid;border-bottom-width:1px;border-top-color:rgba(0, 0, 0, 1);border-top-style:solid;border-top-width:1px;border-right-color:rgba(0, 0, 0, 1);border-right-style:solid;border-right-width:1px;border-left-color:rgba(0, 0, 0, 1);border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
 <p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
-<span style="font-size:12pt;font-family:Arial;color:#000000;">1</span>
+<span style="font-size:12pt;font-family:Arial;color:rgba(0, 0, 0, 1);">1</span>
 </p>
 </td>
-<td style="background-color:#FFFFFF;border-bottom-color:#000000;border-bottom-style:solid;border-bottom-width:1px;border-top-color:#000000;border-top-style:solid;border-top-width:1px;border-right-color:#000000;border-right-style:solid;border-right-width:1px;border-left-color:#000000;border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
+<td style="background-color:rgba(255, 255, 255, 0);border-bottom-color:rgba(0, 0, 0, 1);border-bottom-style:solid;border-bottom-width:1px;border-top-color:rgba(0, 0, 0, 1);border-top-style:solid;border-top-width:1px;border-right-color:rgba(0, 0, 0, 1);border-right-style:solid;border-right-width:1px;border-left-color:rgba(0, 0, 0, 1);border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
 <p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
-<span style="font-size:12pt;font-family:Arial;color:#000000;">4</span>
+<span style="font-size:12pt;font-family:Arial;color:rgba(0, 0, 0, 1);">4</span>
 </p>
 </td>
-<td style="background-color:#FFFFFF;border-bottom-color:#000000;border-bottom-style:solid;border-bottom-width:1px;border-top-color:#000000;border-top-style:solid;border-top-width:1px;border-right-color:#000000;border-right-style:solid;border-right-width:1px;border-left-color:#000000;border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
+<td style="background-color:rgba(255, 255, 255, 0);border-bottom-color:rgba(0, 0, 0, 1);border-bottom-style:solid;border-bottom-width:1px;border-top-color:rgba(0, 0, 0, 1);border-top-style:solid;border-top-width:1px;border-right-color:rgba(0, 0, 0, 1);border-right-style:solid;border-right-width:1px;border-left-color:rgba(0, 0, 0, 1);border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
 <p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
-<span style="font-size:12pt;font-family:Arial;color:#000000;">1</span>
-</p>
-</td>
-</tr>
-<tr>
-<td style="background-color:#FFFFFF;border-bottom-color:#000000;border-bottom-style:solid;border-bottom-width:1px;border-top-color:#000000;border-top-style:solid;border-top-width:1px;border-right-color:#000000;border-right-style:solid;border-right-width:1px;border-left-color:#000000;border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
-<p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
-<span style="font-size:12pt;font-family:Arial;color:#000000;">Hornet 4 Drive</span>
-</p>
-</td>
-<td style="background-color:#FFFFFF;border-bottom-color:#000000;border-bottom-style:solid;border-bottom-width:1px;border-top-color:#000000;border-top-style:solid;border-top-width:1px;border-right-color:#000000;border-right-style:solid;border-right-width:1px;border-left-color:#000000;border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
-<p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
-<span style="font-size:12pt;font-family:Arial;color:#000000;">21.4</span>
-</p>
-</td>
-<td style="background-color:#FFFFFF;border-bottom-color:#000000;border-bottom-style:solid;border-bottom-width:1px;border-top-color:#000000;border-top-style:solid;border-top-width:1px;border-right-color:#000000;border-right-style:solid;border-right-width:1px;border-left-color:#000000;border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
-<p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
-<span style="font-size:12pt;font-family:Arial;color:#000000;">6</span>
-</p>
-</td>
-<td style="background-color:#FFFFFF;border-bottom-color:#000000;border-bottom-style:solid;border-bottom-width:1px;border-top-color:#000000;border-top-style:solid;border-top-width:1px;border-right-color:#000000;border-right-style:solid;border-right-width:1px;border-left-color:#000000;border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
-<p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
-<span style="font-size:12pt;font-family:Arial;color:#000000;">258</span>
-</p>
-</td>
-<td style="background-color:#FFFFFF;border-bottom-color:#000000;border-bottom-style:solid;border-bottom-width:1px;border-top-color:#000000;border-top-style:solid;border-top-width:1px;border-right-color:#000000;border-right-style:solid;border-right-width:1px;border-left-color:#000000;border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
-<p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
-<span style="font-size:12pt;font-family:Arial;color:#000000;">110</span>
-</p>
-</td>
-<td style="background-color:#FFFFFF;border-bottom-color:#000000;border-bottom-style:solid;border-bottom-width:1px;border-top-color:#000000;border-top-style:solid;border-top-width:1px;border-right-color:#000000;border-right-style:solid;border-right-width:1px;border-left-color:#000000;border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
-<p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
-<span style="font-size:12pt;font-family:Arial;color:#000000;">3.08</span>
-</p>
-</td>
-<td style="background-color:#FFFFFF;border-bottom-color:#000000;border-bottom-style:solid;border-bottom-width:1px;border-top-color:#000000;border-top-style:solid;border-top-width:1px;border-right-color:#000000;border-right-style:solid;border-right-width:1px;border-left-color:#000000;border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
-<p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
-<span style="font-size:12pt;font-family:Arial;color:#000000;">3.215</span>
-</p>
-</td>
-<td style="background-color:#FFFFFF;border-bottom-color:#000000;border-bottom-style:solid;border-bottom-width:1px;border-top-color:#000000;border-top-style:solid;border-top-width:1px;border-right-color:#000000;border-right-style:solid;border-right-width:1px;border-left-color:#000000;border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
-<p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
-<span style="font-size:12pt;font-family:Arial;color:#000000;">19.44</span>
-</p>
-</td>
-<td style="background-color:#FFFFFF;border-bottom-color:#000000;border-bottom-style:solid;border-bottom-width:1px;border-top-color:#000000;border-top-style:solid;border-top-width:1px;border-right-color:#000000;border-right-style:solid;border-right-width:1px;border-left-color:#000000;border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
-<p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
-<span style="font-size:12pt;font-family:Arial;color:#000000;">1</span>
-</p>
-</td>
-<td style="background-color:#FFFFFF;border-bottom-color:#000000;border-bottom-style:solid;border-bottom-width:1px;border-top-color:#000000;border-top-style:solid;border-top-width:1px;border-right-color:#000000;border-right-style:solid;border-right-width:1px;border-left-color:#000000;border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
-<p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
-<span style="font-size:12pt;font-family:Arial;color:#000000;">0</span>
-</p>
-</td>
-<td style="background-color:#FFFFFF;border-bottom-color:#000000;border-bottom-style:solid;border-bottom-width:1px;border-top-color:#000000;border-top-style:solid;border-top-width:1px;border-right-color:#000000;border-right-style:solid;border-right-width:1px;border-left-color:#000000;border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
-<p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
-<span style="font-size:12pt;font-family:Arial;color:#000000;">3</span>
-</p>
-</td>
-<td style="background-color:#FFFFFF;border-bottom-color:#000000;border-bottom-style:solid;border-bottom-width:1px;border-top-color:#000000;border-top-style:solid;border-top-width:1px;border-right-color:#000000;border-right-style:solid;border-right-width:1px;border-left-color:#000000;border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
-<p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
-<span style="font-size:12pt;font-family:Arial;color:#000000;">1</span>
+<span style="font-size:12pt;font-family:Arial;color:rgba(0, 0, 0, 1);">4</span>
 </p>
 </td>
 </tr>
 <tr>
-<td style="background-color:#FFFFFF;border-bottom-color:#000000;border-bottom-style:solid;border-bottom-width:1px;border-top-color:#000000;border-top-style:solid;border-top-width:1px;border-right-color:#000000;border-right-style:solid;border-right-width:1px;border-left-color:#000000;border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
+<td style="background-color:rgba(255, 255, 255, 0);border-bottom-color:rgba(0, 0, 0, 1);border-bottom-style:solid;border-bottom-width:1px;border-top-color:rgba(0, 0, 0, 1);border-top-style:solid;border-top-width:1px;border-right-color:rgba(0, 0, 0, 1);border-right-style:solid;border-right-width:1px;border-left-color:rgba(0, 0, 0, 1);border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
 <p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
-<span style="font-size:12pt;font-family:Arial;color:#000000;">Hornet Sportabout</span>
+<span style="font-size:12pt;font-family:Arial;color:rgba(0, 0, 0, 1);">Datsun 710</span>
 </p>
 </td>
-<td style="background-color:#FFFFFF;border-bottom-color:#000000;border-bottom-style:solid;border-bottom-width:1px;border-top-color:#000000;border-top-style:solid;border-top-width:1px;border-right-color:#000000;border-right-style:solid;border-right-width:1px;border-left-color:#000000;border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
+<td style="background-color:rgba(255, 255, 255, 0);border-bottom-color:rgba(0, 0, 0, 1);border-bottom-style:solid;border-bottom-width:1px;border-top-color:rgba(0, 0, 0, 1);border-top-style:solid;border-top-width:1px;border-right-color:rgba(0, 0, 0, 1);border-right-style:solid;border-right-width:1px;border-left-color:rgba(0, 0, 0, 1);border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
 <p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
-<span style="font-size:12pt;font-family:Arial;color:#000000;">18.7</span>
+<span style="font-size:12pt;font-family:Arial;color:rgba(0, 0, 0, 1);">22.8</span>
 </p>
 </td>
-<td style="background-color:#FFFFFF;border-bottom-color:#000000;border-bottom-style:solid;border-bottom-width:1px;border-top-color:#000000;border-top-style:solid;border-top-width:1px;border-right-color:#000000;border-right-style:solid;border-right-width:1px;border-left-color:#000000;border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
+<td style="background-color:rgba(255, 255, 255, 0);border-bottom-color:rgba(0, 0, 0, 1);border-bottom-style:solid;border-bottom-width:1px;border-top-color:rgba(0, 0, 0, 1);border-top-style:solid;border-top-width:1px;border-right-color:rgba(0, 0, 0, 1);border-right-style:solid;border-right-width:1px;border-left-color:rgba(0, 0, 0, 1);border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
 <p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
-<span style="font-size:12pt;font-family:Arial;color:#000000;">8</span>
+<span style="font-size:12pt;font-family:Arial;color:rgba(0, 0, 0, 1);">4</span>
 </p>
 </td>
-<td style="background-color:#FFFFFF;border-bottom-color:#000000;border-bottom-style:solid;border-bottom-width:1px;border-top-color:#000000;border-top-style:solid;border-top-width:1px;border-right-color:#000000;border-right-style:solid;border-right-width:1px;border-left-color:#000000;border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
+<td style="background-color:rgba(255, 255, 255, 0);border-bottom-color:rgba(0, 0, 0, 1);border-bottom-style:solid;border-bottom-width:1px;border-top-color:rgba(0, 0, 0, 1);border-top-style:solid;border-top-width:1px;border-right-color:rgba(0, 0, 0, 1);border-right-style:solid;border-right-width:1px;border-left-color:rgba(0, 0, 0, 1);border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
 <p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
-<span style="font-size:12pt;font-family:Arial;color:#000000;">360</span>
+<span style="font-size:12pt;font-family:Arial;color:rgba(0, 0, 0, 1);">108</span>
 </p>
 </td>
-<td style="background-color:#FFFFFF;border-bottom-color:#000000;border-bottom-style:solid;border-bottom-width:1px;border-top-color:#000000;border-top-style:solid;border-top-width:1px;border-right-color:#000000;border-right-style:solid;border-right-width:1px;border-left-color:#000000;border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
+<td style="background-color:rgba(255, 255, 255, 0);border-bottom-color:rgba(0, 0, 0, 1);border-bottom-style:solid;border-bottom-width:1px;border-top-color:rgba(0, 0, 0, 1);border-top-style:solid;border-top-width:1px;border-right-color:rgba(0, 0, 0, 1);border-right-style:solid;border-right-width:1px;border-left-color:rgba(0, 0, 0, 1);border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
 <p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
-<span style="font-size:12pt;font-family:Arial;color:#000000;">175</span>
+<span style="font-size:12pt;font-family:Arial;color:rgba(0, 0, 0, 1);"> 93</span>
 </p>
 </td>
-<td style="background-color:#FFFFFF;border-bottom-color:#000000;border-bottom-style:solid;border-bottom-width:1px;border-top-color:#000000;border-top-style:solid;border-top-width:1px;border-right-color:#000000;border-right-style:solid;border-right-width:1px;border-left-color:#000000;border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
+<td style="background-color:rgba(255, 255, 255, 0);border-bottom-color:rgba(0, 0, 0, 1);border-bottom-style:solid;border-bottom-width:1px;border-top-color:rgba(0, 0, 0, 1);border-top-style:solid;border-top-width:1px;border-right-color:rgba(0, 0, 0, 1);border-right-style:solid;border-right-width:1px;border-left-color:rgba(0, 0, 0, 1);border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
 <p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
-<span style="font-size:12pt;font-family:Arial;color:#000000;">3.15</span>
+<span style="font-size:12pt;font-family:Arial;color:rgba(0, 0, 0, 1);">3.85</span>
 </p>
 </td>
-<td style="background-color:#FFFFFF;border-bottom-color:#000000;border-bottom-style:solid;border-bottom-width:1px;border-top-color:#000000;border-top-style:solid;border-top-width:1px;border-right-color:#000000;border-right-style:solid;border-right-width:1px;border-left-color:#000000;border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
+<td style="background-color:rgba(255, 255, 255, 0);border-bottom-color:rgba(0, 0, 0, 1);border-bottom-style:solid;border-bottom-width:1px;border-top-color:rgba(0, 0, 0, 1);border-top-style:solid;border-top-width:1px;border-right-color:rgba(0, 0, 0, 1);border-right-style:solid;border-right-width:1px;border-left-color:rgba(0, 0, 0, 1);border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
 <p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
-<span style="font-size:12pt;font-family:Arial;color:#000000;">3.440</span>
+<span style="font-size:12pt;font-family:Arial;color:rgba(0, 0, 0, 1);">2.320</span>
 </p>
 </td>
-<td style="background-color:#FFFFFF;border-bottom-color:#000000;border-bottom-style:solid;border-bottom-width:1px;border-top-color:#000000;border-top-style:solid;border-top-width:1px;border-right-color:#000000;border-right-style:solid;border-right-width:1px;border-left-color:#000000;border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
+<td style="background-color:rgba(255, 255, 255, 0);border-bottom-color:rgba(0, 0, 0, 1);border-bottom-style:solid;border-bottom-width:1px;border-top-color:rgba(0, 0, 0, 1);border-top-style:solid;border-top-width:1px;border-right-color:rgba(0, 0, 0, 1);border-right-style:solid;border-right-width:1px;border-left-color:rgba(0, 0, 0, 1);border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
 <p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
-<span style="font-size:12pt;font-family:Arial;color:#000000;">17.02</span>
+<span style="font-size:12pt;font-family:Arial;color:rgba(0, 0, 0, 1);">18.61</span>
 </p>
 </td>
-<td style="background-color:#FFFFFF;border-bottom-color:#000000;border-bottom-style:solid;border-bottom-width:1px;border-top-color:#000000;border-top-style:solid;border-top-width:1px;border-right-color:#000000;border-right-style:solid;border-right-width:1px;border-left-color:#000000;border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
+<td style="background-color:rgba(255, 255, 255, 0);border-bottom-color:rgba(0, 0, 0, 1);border-bottom-style:solid;border-bottom-width:1px;border-top-color:rgba(0, 0, 0, 1);border-top-style:solid;border-top-width:1px;border-right-color:rgba(0, 0, 0, 1);border-right-style:solid;border-right-width:1px;border-left-color:rgba(0, 0, 0, 1);border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
 <p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
-<span style="font-size:12pt;font-family:Arial;color:#000000;">0</span>
+<span style="font-size:12pt;font-family:Arial;color:rgba(0, 0, 0, 1);">1</span>
 </p>
 </td>
-<td style="background-color:#FFFFFF;border-bottom-color:#000000;border-bottom-style:solid;border-bottom-width:1px;border-top-color:#000000;border-top-style:solid;border-top-width:1px;border-right-color:#000000;border-right-style:solid;border-right-width:1px;border-left-color:#000000;border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
+<td style="background-color:rgba(255, 255, 255, 0);border-bottom-color:rgba(0, 0, 0, 1);border-bottom-style:solid;border-bottom-width:1px;border-top-color:rgba(0, 0, 0, 1);border-top-style:solid;border-top-width:1px;border-right-color:rgba(0, 0, 0, 1);border-right-style:solid;border-right-width:1px;border-left-color:rgba(0, 0, 0, 1);border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
 <p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
-<span style="font-size:12pt;font-family:Arial;color:#000000;">0</span>
+<span style="font-size:12pt;font-family:Arial;color:rgba(0, 0, 0, 1);">1</span>
 </p>
 </td>
-<td style="background-color:#FFFFFF;border-bottom-color:#000000;border-bottom-style:solid;border-bottom-width:1px;border-top-color:#000000;border-top-style:solid;border-top-width:1px;border-right-color:#000000;border-right-style:solid;border-right-width:1px;border-left-color:#000000;border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
+<td style="background-color:rgba(255, 255, 255, 0);border-bottom-color:rgba(0, 0, 0, 1);border-bottom-style:solid;border-bottom-width:1px;border-top-color:rgba(0, 0, 0, 1);border-top-style:solid;border-top-width:1px;border-right-color:rgba(0, 0, 0, 1);border-right-style:solid;border-right-width:1px;border-left-color:rgba(0, 0, 0, 1);border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
 <p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
-<span style="font-size:12pt;font-family:Arial;color:#000000;">3</span>
+<span style="font-size:12pt;font-family:Arial;color:rgba(0, 0, 0, 1);">4</span>
 </p>
 </td>
-<td style="background-color:#FFFFFF;border-bottom-color:#000000;border-bottom-style:solid;border-bottom-width:1px;border-top-color:#000000;border-top-style:solid;border-top-width:1px;border-right-color:#000000;border-right-style:solid;border-right-width:1px;border-left-color:#000000;border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
+<td style="background-color:rgba(255, 255, 255, 0);border-bottom-color:rgba(0, 0, 0, 1);border-bottom-style:solid;border-bottom-width:1px;border-top-color:rgba(0, 0, 0, 1);border-top-style:solid;border-top-width:1px;border-right-color:rgba(0, 0, 0, 1);border-right-style:solid;border-right-width:1px;border-left-color:rgba(0, 0, 0, 1);border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
 <p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
-<span style="font-size:12pt;font-family:Arial;color:#000000;">2</span>
+<span style="font-size:12pt;font-family:Arial;color:rgba(0, 0, 0, 1);">1</span>
+</p>
+</td>
+</tr>
+<tr>
+<td style="background-color:rgba(255, 255, 255, 0);border-bottom-color:rgba(0, 0, 0, 1);border-bottom-style:solid;border-bottom-width:1px;border-top-color:rgba(0, 0, 0, 1);border-top-style:solid;border-top-width:1px;border-right-color:rgba(0, 0, 0, 1);border-right-style:solid;border-right-width:1px;border-left-color:rgba(0, 0, 0, 1);border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
+<p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
+<span style="font-size:12pt;font-family:Arial;color:rgba(0, 0, 0, 1);">Hornet 4 Drive</span>
+</p>
+</td>
+<td style="background-color:rgba(255, 255, 255, 0);border-bottom-color:rgba(0, 0, 0, 1);border-bottom-style:solid;border-bottom-width:1px;border-top-color:rgba(0, 0, 0, 1);border-top-style:solid;border-top-width:1px;border-right-color:rgba(0, 0, 0, 1);border-right-style:solid;border-right-width:1px;border-left-color:rgba(0, 0, 0, 1);border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
+<p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
+<span style="font-size:12pt;font-family:Arial;color:rgba(0, 0, 0, 1);">21.4</span>
+</p>
+</td>
+<td style="background-color:rgba(255, 255, 255, 0);border-bottom-color:rgba(0, 0, 0, 1);border-bottom-style:solid;border-bottom-width:1px;border-top-color:rgba(0, 0, 0, 1);border-top-style:solid;border-top-width:1px;border-right-color:rgba(0, 0, 0, 1);border-right-style:solid;border-right-width:1px;border-left-color:rgba(0, 0, 0, 1);border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
+<p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
+<span style="font-size:12pt;font-family:Arial;color:rgba(0, 0, 0, 1);">6</span>
+</p>
+</td>
+<td style="background-color:rgba(255, 255, 255, 0);border-bottom-color:rgba(0, 0, 0, 1);border-bottom-style:solid;border-bottom-width:1px;border-top-color:rgba(0, 0, 0, 1);border-top-style:solid;border-top-width:1px;border-right-color:rgba(0, 0, 0, 1);border-right-style:solid;border-right-width:1px;border-left-color:rgba(0, 0, 0, 1);border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
+<p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
+<span style="font-size:12pt;font-family:Arial;color:rgba(0, 0, 0, 1);">258</span>
+</p>
+</td>
+<td style="background-color:rgba(255, 255, 255, 0);border-bottom-color:rgba(0, 0, 0, 1);border-bottom-style:solid;border-bottom-width:1px;border-top-color:rgba(0, 0, 0, 1);border-top-style:solid;border-top-width:1px;border-right-color:rgba(0, 0, 0, 1);border-right-style:solid;border-right-width:1px;border-left-color:rgba(0, 0, 0, 1);border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
+<p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
+<span style="font-size:12pt;font-family:Arial;color:rgba(0, 0, 0, 1);">110</span>
+</p>
+</td>
+<td style="background-color:rgba(255, 255, 255, 0);border-bottom-color:rgba(0, 0, 0, 1);border-bottom-style:solid;border-bottom-width:1px;border-top-color:rgba(0, 0, 0, 1);border-top-style:solid;border-top-width:1px;border-right-color:rgba(0, 0, 0, 1);border-right-style:solid;border-right-width:1px;border-left-color:rgba(0, 0, 0, 1);border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
+<p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
+<span style="font-size:12pt;font-family:Arial;color:rgba(0, 0, 0, 1);">3.08</span>
+</p>
+</td>
+<td style="background-color:rgba(255, 255, 255, 0);border-bottom-color:rgba(0, 0, 0, 1);border-bottom-style:solid;border-bottom-width:1px;border-top-color:rgba(0, 0, 0, 1);border-top-style:solid;border-top-width:1px;border-right-color:rgba(0, 0, 0, 1);border-right-style:solid;border-right-width:1px;border-left-color:rgba(0, 0, 0, 1);border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
+<p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
+<span style="font-size:12pt;font-family:Arial;color:rgba(0, 0, 0, 1);">3.215</span>
+</p>
+</td>
+<td style="background-color:rgba(255, 255, 255, 0);border-bottom-color:rgba(0, 0, 0, 1);border-bottom-style:solid;border-bottom-width:1px;border-top-color:rgba(0, 0, 0, 1);border-top-style:solid;border-top-width:1px;border-right-color:rgba(0, 0, 0, 1);border-right-style:solid;border-right-width:1px;border-left-color:rgba(0, 0, 0, 1);border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
+<p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
+<span style="font-size:12pt;font-family:Arial;color:rgba(0, 0, 0, 1);">19.44</span>
+</p>
+</td>
+<td style="background-color:rgba(255, 255, 255, 0);border-bottom-color:rgba(0, 0, 0, 1);border-bottom-style:solid;border-bottom-width:1px;border-top-color:rgba(0, 0, 0, 1);border-top-style:solid;border-top-width:1px;border-right-color:rgba(0, 0, 0, 1);border-right-style:solid;border-right-width:1px;border-left-color:rgba(0, 0, 0, 1);border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
+<p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
+<span style="font-size:12pt;font-family:Arial;color:rgba(0, 0, 0, 1);">1</span>
+</p>
+</td>
+<td style="background-color:rgba(255, 255, 255, 0);border-bottom-color:rgba(0, 0, 0, 1);border-bottom-style:solid;border-bottom-width:1px;border-top-color:rgba(0, 0, 0, 1);border-top-style:solid;border-top-width:1px;border-right-color:rgba(0, 0, 0, 1);border-right-style:solid;border-right-width:1px;border-left-color:rgba(0, 0, 0, 1);border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
+<p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
+<span style="font-size:12pt;font-family:Arial;color:rgba(0, 0, 0, 1);">0</span>
+</p>
+</td>
+<td style="background-color:rgba(255, 255, 255, 0);border-bottom-color:rgba(0, 0, 0, 1);border-bottom-style:solid;border-bottom-width:1px;border-top-color:rgba(0, 0, 0, 1);border-top-style:solid;border-top-width:1px;border-right-color:rgba(0, 0, 0, 1);border-right-style:solid;border-right-width:1px;border-left-color:rgba(0, 0, 0, 1);border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
+<p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
+<span style="font-size:12pt;font-family:Arial;color:rgba(0, 0, 0, 1);">3</span>
+</p>
+</td>
+<td style="background-color:rgba(255, 255, 255, 0);border-bottom-color:rgba(0, 0, 0, 1);border-bottom-style:solid;border-bottom-width:1px;border-top-color:rgba(0, 0, 0, 1);border-top-style:solid;border-top-width:1px;border-right-color:rgba(0, 0, 0, 1);border-right-style:solid;border-right-width:1px;border-left-color:rgba(0, 0, 0, 1);border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
+<p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
+<span style="font-size:12pt;font-family:Arial;color:rgba(0, 0, 0, 1);">1</span>
+</p>
+</td>
+</tr>
+<tr>
+<td style="background-color:rgba(255, 255, 255, 0);border-bottom-color:rgba(0, 0, 0, 1);border-bottom-style:solid;border-bottom-width:1px;border-top-color:rgba(0, 0, 0, 1);border-top-style:solid;border-top-width:1px;border-right-color:rgba(0, 0, 0, 1);border-right-style:solid;border-right-width:1px;border-left-color:rgba(0, 0, 0, 1);border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
+<p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
+<span style="font-size:12pt;font-family:Arial;color:rgba(0, 0, 0, 1);">Hornet Sportabout</span>
+</p>
+</td>
+<td style="background-color:rgba(255, 255, 255, 0);border-bottom-color:rgba(0, 0, 0, 1);border-bottom-style:solid;border-bottom-width:1px;border-top-color:rgba(0, 0, 0, 1);border-top-style:solid;border-top-width:1px;border-right-color:rgba(0, 0, 0, 1);border-right-style:solid;border-right-width:1px;border-left-color:rgba(0, 0, 0, 1);border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
+<p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
+<span style="font-size:12pt;font-family:Arial;color:rgba(0, 0, 0, 1);">18.7</span>
+</p>
+</td>
+<td style="background-color:rgba(255, 255, 255, 0);border-bottom-color:rgba(0, 0, 0, 1);border-bottom-style:solid;border-bottom-width:1px;border-top-color:rgba(0, 0, 0, 1);border-top-style:solid;border-top-width:1px;border-right-color:rgba(0, 0, 0, 1);border-right-style:solid;border-right-width:1px;border-left-color:rgba(0, 0, 0, 1);border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
+<p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
+<span style="font-size:12pt;font-family:Arial;color:rgba(0, 0, 0, 1);">8</span>
+</p>
+</td>
+<td style="background-color:rgba(255, 255, 255, 0);border-bottom-color:rgba(0, 0, 0, 1);border-bottom-style:solid;border-bottom-width:1px;border-top-color:rgba(0, 0, 0, 1);border-top-style:solid;border-top-width:1px;border-right-color:rgba(0, 0, 0, 1);border-right-style:solid;border-right-width:1px;border-left-color:rgba(0, 0, 0, 1);border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
+<p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
+<span style="font-size:12pt;font-family:Arial;color:rgba(0, 0, 0, 1);">360</span>
+</p>
+</td>
+<td style="background-color:rgba(255, 255, 255, 0);border-bottom-color:rgba(0, 0, 0, 1);border-bottom-style:solid;border-bottom-width:1px;border-top-color:rgba(0, 0, 0, 1);border-top-style:solid;border-top-width:1px;border-right-color:rgba(0, 0, 0, 1);border-right-style:solid;border-right-width:1px;border-left-color:rgba(0, 0, 0, 1);border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
+<p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
+<span style="font-size:12pt;font-family:Arial;color:rgba(0, 0, 0, 1);">175</span>
+</p>
+</td>
+<td style="background-color:rgba(255, 255, 255, 0);border-bottom-color:rgba(0, 0, 0, 1);border-bottom-style:solid;border-bottom-width:1px;border-top-color:rgba(0, 0, 0, 1);border-top-style:solid;border-top-width:1px;border-right-color:rgba(0, 0, 0, 1);border-right-style:solid;border-right-width:1px;border-left-color:rgba(0, 0, 0, 1);border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
+<p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
+<span style="font-size:12pt;font-family:Arial;color:rgba(0, 0, 0, 1);">3.15</span>
+</p>
+</td>
+<td style="background-color:rgba(255, 255, 255, 0);border-bottom-color:rgba(0, 0, 0, 1);border-bottom-style:solid;border-bottom-width:1px;border-top-color:rgba(0, 0, 0, 1);border-top-style:solid;border-top-width:1px;border-right-color:rgba(0, 0, 0, 1);border-right-style:solid;border-right-width:1px;border-left-color:rgba(0, 0, 0, 1);border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
+<p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
+<span style="font-size:12pt;font-family:Arial;color:rgba(0, 0, 0, 1);">3.440</span>
+</p>
+</td>
+<td style="background-color:rgba(255, 255, 255, 0);border-bottom-color:rgba(0, 0, 0, 1);border-bottom-style:solid;border-bottom-width:1px;border-top-color:rgba(0, 0, 0, 1);border-top-style:solid;border-top-width:1px;border-right-color:rgba(0, 0, 0, 1);border-right-style:solid;border-right-width:1px;border-left-color:rgba(0, 0, 0, 1);border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
+<p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
+<span style="font-size:12pt;font-family:Arial;color:rgba(0, 0, 0, 1);">17.02</span>
+</p>
+</td>
+<td style="background-color:rgba(255, 255, 255, 0);border-bottom-color:rgba(0, 0, 0, 1);border-bottom-style:solid;border-bottom-width:1px;border-top-color:rgba(0, 0, 0, 1);border-top-style:solid;border-top-width:1px;border-right-color:rgba(0, 0, 0, 1);border-right-style:solid;border-right-width:1px;border-left-color:rgba(0, 0, 0, 1);border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
+<p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
+<span style="font-size:12pt;font-family:Arial;color:rgba(0, 0, 0, 1);">0</span>
+</p>
+</td>
+<td style="background-color:rgba(255, 255, 255, 0);border-bottom-color:rgba(0, 0, 0, 1);border-bottom-style:solid;border-bottom-width:1px;border-top-color:rgba(0, 0, 0, 1);border-top-style:solid;border-top-width:1px;border-right-color:rgba(0, 0, 0, 1);border-right-style:solid;border-right-width:1px;border-left-color:rgba(0, 0, 0, 1);border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
+<p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
+<span style="font-size:12pt;font-family:Arial;color:rgba(0, 0, 0, 1);">0</span>
+</p>
+</td>
+<td style="background-color:rgba(255, 255, 255, 0);border-bottom-color:rgba(0, 0, 0, 1);border-bottom-style:solid;border-bottom-width:1px;border-top-color:rgba(0, 0, 0, 1);border-top-style:solid;border-top-width:1px;border-right-color:rgba(0, 0, 0, 1);border-right-style:solid;border-right-width:1px;border-left-color:rgba(0, 0, 0, 1);border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
+<p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
+<span style="font-size:12pt;font-family:Arial;color:rgba(0, 0, 0, 1);">3</span>
+</p>
+</td>
+<td style="background-color:rgba(255, 255, 255, 0);border-bottom-color:rgba(0, 0, 0, 1);border-bottom-style:solid;border-bottom-width:1px;border-top-color:rgba(0, 0, 0, 1);border-top-style:solid;border-top-width:1px;border-right-color:rgba(0, 0, 0, 1);border-right-style:solid;border-right-width:1px;border-left-color:rgba(0, 0, 0, 1);border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;">
+<p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
+<span style="font-size:12pt;font-family:Arial;color:rgba(0, 0, 0, 1);">2</span>
 </p>
 </td>
 </tr>
 </tbody>
 <tfoot>
 <tr>
-<td style="background-color:#FFFFFF;border-bottom-color:#000000;border-bottom-style:solid;border-bottom-width:1px;border-top-color:#000000;border-top-style:solid;border-top-width:1px;border-right-color:#000000;border-right-style:solid;border-right-width:1px;border-left-color:#000000;border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;" colspan="12">
+<td style="background-color:rgba(255, 255, 255, 0);border-bottom-color:rgba(0, 0, 0, 1);border-bottom-style:solid;border-bottom-width:1px;border-top-color:rgba(0, 0, 0, 1);border-top-style:solid;border-top-width:1px;border-right-color:rgba(0, 0, 0, 1);border-right-style:solid;border-right-width:1px;border-left-color:rgba(0, 0, 0, 1);border-left-style:solid;border-left-width:1px;vertical-align:middle;padding-left:0pt;padding-right:0pt;padding-top:0pt;padding-bottom:0pt;" colspan="12">
 <p style="text-align:left;padding-top:0pt;padding-bottom:0pt;padding-right:0pt;padding-left:0pt;">
-<span style="font-size:12pt;font-family:Arial;color:#FF0000;vertical-align:super;">*</span><span style="font-size:12pt;font-family:Arial;font-style:italic;color:#A52A2A;"> This is a note</span>
+<span style="font-size:12pt;font-family:Arial;color:rgba(255, 0, 0, 1);vertical-align:super;">*</span><span style="font-size:12pt;font-family:Arial;font-style:italic;color:rgba(165, 42, 42, 1);"> This is a note</span>
 </p>
 </td>
 </tr>
@@ -790,7 +790,7 @@ MyFTable</code></pre>
 <pre class="r"><code>pot( &#39;Cats&#39;, hyperlink = &#39;http://en.wikipedia.org&#39;,
   textBoldItalic( color = &#39;#428BCA&#39;, underline = TRUE ) ) </code></pre>
 <p>
-<a href="http://en.wikipedia.org"><span style="font-size:12pt;font-family:Arial;font-weight:bold;font-style:italic;text-decoration:underline;color:#428BCA;">Cats</span></a>
+<a href="http://en.wikipedia.org"><span style="font-size:12pt;font-family:Arial;font-weight:bold;font-style:italic;text-decoration:underline;color:rgba(66, 139, 202, 1);">Cats</span></a>
 </p>
 </div>
 <div id="footnotes" class="section level1">
