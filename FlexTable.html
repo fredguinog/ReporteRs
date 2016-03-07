@@ -4316,10 +4316,8 @@ MyFTable</code></pre>
 </div>
 <div id="change-borders" class="section level3">
 <h3>Change borders</h3>
-<pre class="r"><code>MyFTable[ 2:5,&#39;Status&#39;, side = &#39;bottom&#39;] = borderProperties( style = &#39;dashed&#39; )
-MyFTable[,&#39;Status&#39;, 
-         to = &#39;header&#39;, 
-         side = &#39;bottom&#39;] = borderProperties( width=3, style = &#39;dashed&#39; )
+<pre class="r"><code>MyFTable[ 2:5,&#39;Status&#39;, side = &#39;bottom&#39;] &lt;- borderProperties( style = &#39;dashed&#39; )
+MyFTable[,&#39;Status&#39;, to = &#39;header&#39;, side = &#39;bottom&#39;] &lt;- borderProperties( width=3, style = &#39;dashed&#39; )
 MyFTable</code></pre>
 <table style="margin-left:0px;margin-right:auto;">
 <col width="216">

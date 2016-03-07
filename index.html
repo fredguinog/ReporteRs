@@ -311,42 +311,22 @@ div.tocify {
 </div>
 <p><em><code>ReporteRs</code> is an R package for creating Microsoft (Word docx and Powerpoint pptx) and html documents. It does not require any Microsoft component to be used. It runs on Windows, Linux, Unix and Mac OS systems. This is the ideal tool to automate reporting generation from R.</em></p>
 <hr />
-<p><a href="powerpoint.html"><img src="figure/Logo_Microsoft_PowerPoint_2013.png" alt="PowerPoint" /></a></p>
-<p>Create Powerpoint presentations from R with your corporate template.</p>
-<hr />
-<p><a href="word.html"><img src="figure/Microsoft_Word_logo.png" alt="Word" /></a></p>
-<p>Create your own Word documents from R. Use your corporate template. Replace content in existing Word documents.</p>
-<hr />
-<p><a href="FlexTable.html"><img src="figure/FlexTable.png" alt="FlexTable" /></a></p>
-<p>A set of tools to customize tables, their formats and their contents</p>
-<hr />
-<p><a href="pot_objects.html"><img src="figure/POT.png" alt="pot" /></a></p>
-<p>Create and format any text from R with pot objects.</p>
-<hr />
-<p><a href="evg.html"><img src="figure/EVG.png" alt="evg" /></a></p>
-<p>Add R plots as editable vector graphics into documents.</p>
-<div id="installation" class="section level2">
-<h2>Installation</h2>
-<p>ReporteRs needs <code>rJava</code> with a java version &gt;= 1.6 ; make sure you have an installed JRE.</p>
-<p><code>system(&quot;java -version&quot;)</code> should return <em>java version ‘1.6.0’</em> or greater.</p>
-<p>Test your <code>rJava</code> installation with the following code, you should get your java version in a string:</p>
-<pre class="r"><code>require(rJava)
-.jcall(&#39;java.lang.System&#39;,&#39;S&#39;,&#39;getProperty&#39;,&#39;java.version&#39;)</code></pre>
-<pre><code>## [1] &quot;1.6.0_65&quot;</code></pre>
-<div id="get-cran-version" class="section level3">
-<h3>Get CRAN version</h3>
-<pre class="r"><code>install.packages(&#39;ReporteRs&#39;)</code></pre>
+<div style="text-align:center;">
+<blockquote>
+<p><a href="powerpoint.html"><img src="figure/Logo_Microsoft_PowerPoint_2013.png" alt="PowerPoint" /></a> <a href="word.html"><img src="figure/Microsoft_Word_logo.png" alt="Word" /></a></br> Create your own Word or PowerPoint documents from R. Use your corporate template.</p>
+</blockquote>
 </div>
-<div id="from-github" class="section level3">
-<h3>From Github</h3>
-<pre class="r"><code>require(&#39;devtools&#39;)
-install_github(&#39;ReporteRsjars&#39;, &#39;davidgohel&#39;)
-install_github(&#39;ReporteRs&#39;, &#39;davidgohel&#39;)</code></pre>
+<hr />
+<div style="text-align:center;">
+<blockquote>
+<p><a href="FlexTable.html"><img src="figure/FlexTable.png" alt="FlexTable" /></a><a href="pot_objects.html"><img src="figure/POT.png" alt="pot" /></a></br> <code>FlexTable</code> and <code>pot</code>: A set of tools to customize tables, their formats and their contents</p>
+</blockquote>
 </div>
-<div id="binaries-from-github" class="section level3">
-<h3>Binaries from Github</h3>
-<p>Binary versions are available on Github (for Windows and Mac OS) <a href="http://github.com/davidgohel/ReporteRs/releases/">here</a>.</p>
-</div>
+<hr />
+<div style="text-align:center;">
+<blockquote>
+<p><a href="evg.html"><img src="figure/EVG.png" alt="evg" /></a></br> Add R plots as editable vector graphics into documents.</p>
+</blockquote>
 </div>
 <div id="introduction" class="section level2">
 <h2>Introduction</h2>
@@ -418,6 +398,29 @@ writeDoc( doc, &#39;files/gettingstarted/my_first_doc.docx&#39; )</code></pre>
 <li><a href="./powerpoint.html#subtitle">addSubtitle</a>: Add a sub title</li>
 <li><strong>dim</strong> : Get shape dimensions</li>
 </ul>
+</div>
+<div id="installation" class="section level2">
+<h2>Installation</h2>
+<p>ReporteRs needs <code>rJava</code> with a java version &gt;= 1.6 ; make sure you have an installed JRE.</p>
+<p><code>system(&quot;java -version&quot;)</code> should return <em>java version ‘1.6.0’</em> or greater.</p>
+<p>Test your <code>rJava</code> installation with the following code, you should get your java version in a string:</p>
+<pre class="r"><code>require(rJava)
+.jcall(&#39;java.lang.System&#39;,&#39;S&#39;,&#39;getProperty&#39;,&#39;java.version&#39;)</code></pre>
+<pre><code>## [1] &quot;1.6.0_65&quot;</code></pre>
+<div id="get-cran-version" class="section level3">
+<h3>Get CRAN version</h3>
+<pre class="r"><code>install.packages(&#39;ReporteRs&#39;)</code></pre>
+</div>
+<div id="from-github" class="section level3">
+<h3>From Github</h3>
+<pre class="r"><code>require(&#39;devtools&#39;)
+install_github(&#39;ReporteRsjars&#39;, &#39;davidgohel&#39;)
+install_github(&#39;ReporteRs&#39;, &#39;davidgohel&#39;)</code></pre>
+</div>
+<div id="binaries-from-github" class="section level3">
+<h3>Binaries from Github</h3>
+<p>Binary versions are available on Github (for Windows and Mac OS) <a href="http://github.com/davidgohel/ReporteRs/releases/">here</a>.</p>
+</div>
 </div>
 
 <script>
