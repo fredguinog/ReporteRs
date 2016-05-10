@@ -45,7 +45,7 @@ docx = function( title = "untitled", template, empty_template = FALSE, list.defi
 
 	if( missing( template ) )
 		template = file.path( system.file(package = "ReporteRs"), "templates/EMPTY_DOC.docx" )
-	.reg = regexpr( paste( "(\\.(?i)(docx))$", sep = "" ), template )
+	.reg = regexpr( paste( "(\\.(?i)(docx|docm))$", sep = "" ), template )
 
 	template <- getAbsolutePath(template, expandTilde = TRUE)
 

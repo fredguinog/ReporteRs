@@ -35,9 +35,18 @@ writeDoc.docx = function(doc, file, ...) {
   if( !is.character( file ) ) stop("argument file must be a valid filename (a string value).")
   if( length( file ) != 1 ) stop("length of argument file is not 1.")
   if( !is.character( file ) ) stop("argument file must be a string value (a filename).")
-  .reg = regexpr( paste( "(\\.(?i)(docx))$", sep = "" ), file )
+  .reg = regexpr( paste( "(\\.(?i)(docx|docm))$", sep = "" ), file )
   if( .reg < 1 )
     stop(file , " is not a valid file.")
+
+# CHECK WHETHER OR NOT THE DOCUMENT IS MACRO ENABLED
+# IT IS NECESSARY TO MAKE SURE THE FILE IS SAVED USING THE PROPER EXTENSION,
+# OTHERWISE THE MICROSOFT OFFICE WORD WON'T OPEN IT
+  isMacroEnabled = .jcall( doc$obj , "Z", "isMacroEnabled")
+  if(isMacroEnabled)
+    file = gsub(".docx", ".docm", file)
+  else
+    file = gsub(".docm", ".docx", file)
 
   file = normalizePath( path.expand(file) , mustWork=F, winslash="/")
 
