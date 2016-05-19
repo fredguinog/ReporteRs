@@ -165,12 +165,11 @@ export(textItalic)
 export(textNormal)
 export(textProperties)
 export(text_extract)
-
 export(chart_updateData)
 export(chart_extractXML)
 export(chart_replaceXML)
 export(addChart)
-
+export(replaceText)
 export(toc.options)
 export(vanilla.table)
 export(writeDoc)
